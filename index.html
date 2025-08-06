@@ -2,41 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Official website of SCADE Club at GHRCEM - Cybersecurity and Data Science Club">
+    
+    <title>SCADE Club - GHRCEM | Cybersecurity and Data Science</title>
 
-    <title>Scade Website GHRCEM</title>
-
-    <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Fevicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/scade-logo.png" />
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/templatemo-scholar.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <!--
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-TemplateMo 586 Scholar
-
-https://templatemo.com/tm-586-scholar
-
--->
-     <!-- Custom Style for Uniform Team Images -->
+    <!-- Custom Styles -->
     <style>
       .team-photo {
         width: 200px;
@@ -54,13 +41,48 @@ https://templatemo.com/tm-586-scholar
       .team-member .main-content {
         text-align: center;
       }
+      
+      .section-title {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #333;
+      }
+      
+      .scade-logo {
+        height: 50px;
+        width: auto;
+      }
+      
+      .margin-below {
+        margin-bottom: 30px;
+      }
+      
+      .row2 {
+        margin-top: 20px;
+      }
+      
+      @media (max-width: 768px) {
+        .team-photo {
+          width: 150px;
+          height: 150px;
+        }
+        
+        .section-title {
+          font-size: 50rem;
+          text-align: center;
+          width: auto;
+          display: ;
+
+        }
+      }
+   
     </style>
-    
   </head>
 
   <body>
-
-
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
       <div class="preloader-inner">
@@ -81,25 +103,11 @@ https://templatemo.com/tm-586-scholar
           <div class="col-12">
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img class="scade-logo" src="assets/images/scade-logo.png" alt="">
-                <!-- <h1>Tousif</h1> -->
+              <a href="index.html" class="logo" aria-label="SCADE Club Home">
+                <img class="scade-logo" src="assets/images/scade-logo.png" alt="SCADE Club Logo">
               </a>
               <!-- ***** Logo End ***** -->
-              <!-- ***** Serach Start ***** -->
-              <!-- <div class="search-input">
-                <form id="search" action="#">
-                  <input
-                    type="text"
-                    placeholder="Type Something"
-                    id="searchText"
-                    name="searchKeyword"
-                    onkeypress="handle"
-                  />
-                  <i class="fa fa-search"></i>
-                </form>
-              </div> -->
-              <!-- ***** Serach Start ***** -->
+              
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li class="scroll-to-section">
@@ -112,7 +120,7 @@ https://templatemo.com/tm-586-scholar
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
-              <a class="menu-trigger">
+              <a class="menu-trigger" aria-label="Mobile Menu">
                 <span>Menu</span>
               </a>
               <!-- ***** Menu End ***** -->
@@ -123,6 +131,7 @@ https://templatemo.com/tm-586-scholar
     </header>
     <!-- ***** Header Area End ***** -->
 
+    <!-- Main Banner Section -->
     <div class="main-banner" id="top">
       <div class="container">
         <div class="row">
@@ -130,20 +139,9 @@ https://templatemo.com/tm-586-scholar
             <div class="owl-carousel owl-banner">
               <div class="item item-1">
                 <div class="header-text">
-                  <span class="category">Welcome</span>
-                  <h2>SCADE</h2>
-                  <p>
-                    Society of Cyber Security Advancements & Data Science
-                    Excellence.
-                  </p>
-                  <div class="buttons">
-                    <button
-                        class="new-button"
-                        id="logout"
-                      >
-                      Log out
-                      </button>
-                  </div>
+                  <span class="category">OVERVIEW</span>
+                  <h2>Discover the SCADE Club</h2>
+                  <p class="d-none d-md-block">Empowering students in Cybersecurity and Data Science</p>
                 </div>
               </div>
             </div>
@@ -152,132 +150,77 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
 
+    <!-- About Us Section -->
     <div class="section about-us" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 offset-lg-1">
-            <div class="accordion" id="accordionExample">
+          <div class="col-lg-6 offset-lg-1 order-lg-2">
+            <div class="accordion" id="aboutAccordion">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                  What are the benefits of participating in SCADE’s programs?
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What are the benefits of participating in SCADE's programs?
                   </button>
                 </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#aboutAccordion">
                   <div class="accordion-body">
-                    Participating in our programs provides 
-                    students with valuable learning 
-                    experiences, networking opportunities, 
-                    and exposure to industry trends and 
-                    technologies. It’s a great way to gain 
-                    practical knowledge and connect with 
+                    Participating in our programs provides students with valuable learning 
+                    experiences, networking opportunities, and exposure to industry trends and 
+                    technologies. It's a great way to gain practical knowledge and connect with 
                     others in the field.
                   </div>
                 </div>
               </div>
+              
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                  How can I stay updated with SCADE’s activities?
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How can I stay updated with SCADE's activities?
                   </button>
                 </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#aboutAccordion">
                   <div class="accordion-body">
-                    Stay updated by following us on 
-                    social media, subscribing to our 
-                    newsletter, and regularly visiting
-                     our website for the latest news and 
-                     event information.
-
+                    Stay updated by following us on social media, subscribing to our 
+                    newsletter, and regularly visiting our website for the latest news and 
+                    event information.
                   </div>
                 </div>
               </div>
+              
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                  Who can participate in SCADE’s programs?
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Who can participate in SCADE's programs?
                   </button>
                 </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#aboutAccordion">
                   <div class="accordion-body">
-                    Our programs and events are open 
-                    to all students interested in 
-                    cybersecurity and data science. 
-                    You don’t need to be a member of 
-                    SCADE to participate. We welcome 
-                    students from various backgrounds 
+                    Our programs and events are open to all students interested in 
+                    cybersecurity and data science. You don't need to be a member of 
+                    SCADE to participate. We welcome students from various backgrounds 
                     to join and benefit from our offerings.
                   </div>
                 </div>
               </div>
+              
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                  How can I participate in SCADE’s events?
-
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How can I participate in SCADE's events?
                   </button>
                 </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#aboutAccordion">
                   <div class="accordion-body">
-                    To participate, simply keep an eye
-                     on our website and social media
-                      channels for announcements about 
-                      upcoming events. You can register
-                       or sign up as instructed in the event details.
+                    To participate, simply keep an eye on our website and social media
+                    channels for announcements about upcoming events. You can register
+                    or sign up as instructed in the event details.
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 align-self-center">
+          
+          <div class="col-lg-5 align-self-center order-lg-1">
             <div class="section-heading">
               <h6>About Us</h6>
               <h2>Our Mission</h2>
@@ -288,7 +231,7 @@ https://templatemo.com/tm-586-scholar
                 data science and cybersecurity.
               </p>
               <div class="main-button">
-                <a href="#">Discover More</a>
+                <a href="#events">Discover More</a>
               </div>
             </div>
           </div>
@@ -296,16 +239,18 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
 
+    <!-- Events Section -->
     <section class="section courses" id="events">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-heading">
-              <h6>Latest Events</h6>
+              <h4>Latest Events</h4>
               <h2>Events</h2>
             </div>
           </div>
         </div>
+        
         <ul class="event_filter">
           <li>
             <a class="is_active" href="#!" data-filter="*">Show All</a>
@@ -318,12 +263,14 @@ https://templatemo.com/tm-586-scholar
           </li>
         </ul>
     
-        <div class="row event_box" style="position: relative; height: 727px;">
+        <div class="row event_box">
           <!-- Past Event 1 -->
-          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past" style="position: absolute; left: 0px; top: 0px;">
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past">
             <div class="events_item">
               <div class="thumb">
-                <a href="./zeroDayBlog.html"> <img src="assets/images/events/firstEvent.jpg" alt=""></a>
+                <a href="./zeroDayBlog.html"> 
+                  <img src="assets/images/events/firstEvent.jpg" alt="ZeroDay: Newbie Unveil Event">
+                </a>
                 <span class="category">Inauguration</span>
                 <span class="price"><h6>View</h6></span>
               </div>
@@ -335,10 +282,12 @@ https://templatemo.com/tm-586-scholar
           </div>
     
           <!-- Past Event 2 -->
-          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past" style="position: absolute; left: 320px; top: 0px;">
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past">
             <div class="events_item">
               <div class="thumb">
-                <a href="./githubEvent.html"><img src="assets/images/events/gitEvent.png" alt=""></a>
+                <a href="./githubEvent.html">
+                  <img src="assets/images/events/gitEvent.png" alt="GitHub Bootcamp Event">
+                </a>
                 <span class="category">Source Control</span>
                 <span class="price"><h6>View</h6></span>
               </div>
@@ -350,12 +299,16 @@ https://templatemo.com/tm-586-scholar
           </div>
     
           <!-- Past Event 3 -->
-          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past" style="position: absolute; left: 640px; top: 0px;">
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past">
             <div class="events_item">
               <div class="thumb">
-                <a href="./teachersDayBlog.html"><img src="assets/images/events/teachersDayEvent.jpg" alt=""></a>
+                <a href="./teachersDayBlog.html">
+                  <img src="assets/images/events/teachersDayEvent.jpg" alt="Teacher's Day Event">
+                </a>
                 <span class="category">Social</span>
-                <span class="price"><h6>View</h6></span>
+                <span class="price">
+                  <h6>View</h6>
+                </span>
               </div>
               <div class="down-content">
                 <span class="author">Past Event</span>
@@ -363,283 +316,300 @@ https://templatemo.com/tm-586-scholar
               </div>
             </div>
           </div>
-    
-          <!-- Future Event 1 -->
-          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past" style="position: absolute; left: 0px; top: 320px;">
+          <!-- Past Event 4-->
+           <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer past">
             <div class="events_item">
               <div class="thumb">
-                <a href="./treasureHuntBlog.html"><img src="assets/images/events/tresureHuntEvent.jpg" alt=""></a>
+                <a href="./treasureHuntBlog.html">
+                  <img src="assets/images/events/tresureHuntEvent.jpg"alt>
+                </a>
                 <span class="category">Fun Activity</span>
-                <span class="price"><h6>View</h6></span>
+                <span class="price">
+                  <h6>View</h6>
+                </span>
               </div>
               <div class="down-content">
-                <span class="author">Future Event</span>
-                <h4>Treasure Hunt</h4>
+                <span class="author">Past Event</span>
+                <h4>Tresure Hunt</h4>
               </div>
             </div>
           </div>
-    
-          <!-- Future Event 2 (Commented) -->
-          <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer future" style="position: absolute; left: 320px; top: 320px;">
-            <div class="events_item">
-              <div class="thumb">
-                <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
-                <span class="category">Data Science</span>
-                <span class="price"><h6>View</h6></span>
-              </div>
-              <div class="down-content">
-                <span class="author">Future Event</span>
-                <h4>Learn Ubuntu</h4>
-              </div>
-            </div>
-          </div> -->
+          
+          <!-- No Future Events Message -->
+          <div id="no-future-events" class="col-12 text-center" style="display: none;">
+            <h4 style="margin-top: 30px;">No upcoming events currently</h4>
+            <p>Check back later for our future events!</p>
+          </div>
         </div>
       </div>
     </section>
-    
-  
 
-    
-    </div>
-
-    
+    <!-- Team Section -->
     <div class="team section" id="team">
-      <!-- <div class="section-heading text-center">
-        <h6>Latest Events</h6>
-        <h2>Events</h2>
-      </div> -->
       <div class="container">
-        <div class="row row2">
-          
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h2>Team</h2>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        <!-- Club Coordinator -->
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 mb-5">
+            <div class="team-member text-center">
+              <div class="main-content">
+                <img class="team-photo" src="C:\sudhanshu\WhatsApp Image 2025-08-02 at 12.50.33_8406774e.jpg" alt="Prof. Gayatri Deshmukh - Club Coordinator" />
+                <span class="category d-block mt-3">Club Coordinator</span>
+                <h5 class="mt-2">Prof. Gayatri Deshmukh</h5>
+                <ul class="social-icons list-inline mt-3">
+                  <li class="list-inline-item mx-2">
+                    <a href="#" aria-label="GitHub profile"><i class="fab fa-github fa-lg"></i></a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                    <a href="#" aria-label="Instagram profile"><i class="fab fa-instagram fa-lg"></i></a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                    <a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin fa-lg"></i></a>
+                  </li>
+                </ul>
+                
+              </div>
+               <!-- Core Committee Title -->
+            </div>
+               <h2 class="section-title">Our Core Committee</h2>
+          </div>
+       
+        </div>
+        
+        
+      
+       
 
-
-
-          <!-- head members -->
-          <!-- Member Start -->
-          <div class="col-lg-3 col-md-6 mb-3">
+        <!-- Head Members -->
+        <div class="row row2 justify-content-center">
+          <!-- President -->
+          <div class="col-lg-3 col-md-6 mb-4">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/Tejashvi.jpg" alt="" />
-                <span class="category">President </span>
+                <img class="team-photo" src="assets/images/Tejashvi.jpg" alt="Tejashvi Tiwari - President" />
+                <span class="category">President</span>
                 <h4>Tejashvi Tiwari</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/_tejashvi_09_?igsh=aTFoZDl3aWNrbWFw"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/_tejashvi_09_?igsh=aTFoZDl3aWNrbWFw" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/tejashvitiwari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/tejashvitiwari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          <!-- Member Start -->
-          <div class="col-lg-3 col-md-6">
+          
+          <!-- Vice President -->
+          <div class="col-lg-3 col-md-6 mb-4">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/Harshal.jpg" alt="" />
+                <img class="team-photo" src="assets/images/Harshal.jpg" alt="Harshal Badgujar - Vice President" />
                 <span class="category">Vice President</span>
                 <h4>Harshal Badgujar</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="https://github.com/HarsDiva10"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/HarsDiva10" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/harshdiva_1053?igsh=MWt1Y2R1MGJhdW56dg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/harshdiva_1053?igsh=MWt1Y2R1MGJhdW56dg==" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/harshal-badgujar-b82968285"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/harshal-badgujar-b82968285" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          
-          
         </div>
       </div>
     </div>
     
-    
-    <div class="team section" id="team">
+    <!-- Subhead Members Section -->
+    <div class="team section" id="team-subheads">
       <div class="container">
-        <div class="row row2">
-          
-
-          <!-- subhead members -->
-          <!-- Member Start -->
+        <div class="row row2 justify-content-center">
+          <!-- Technical Lead -->
           <div class="col-lg-3 col-md-6 margin-below">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/Chinmay2.jpg" alt="" />
+                <img class="team-photo" src="assets/images/Chinmay2.jpg" alt="Chinmay Hardikar - Technical Lead" />
                 <span class="category">Technical Lead</span>
                 <h4>Chinmay Hardikar</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="https://github.com/Chinmay2845"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Chinmay2845" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/chinmay_2845?igsh=eHRmamNkMm90djNq"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/chinmay_2845?igsh=eHRmamNkMm90djNq" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/chinmay-hardikar-1967ab287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/chinmay-hardikar-1967ab287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          <!-- Member Start -->
-          <div class="col-lg-3 col-md-6">
+          
+          <!-- Design and Social Lead -->
+          <div class="col-lg-3 col-md-6 margin-below">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/Utkarsh2.jpg" alt="" />
+                <img class="team-photo" src="assets/images/Utkarsh2.jpg" alt="Utkarsh Neel - Design and Social Lead" />
                 <span class="category">Design and Social Lead</span>
                 <h4>Utkarsh Neel</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="https://github.com/UtkarshNeel"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/UtkarshNeel" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/utkarsh_neel_patil"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/utkarsh_neel_patil" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/utkarsh-neel-aa7428291/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/utkarsh-neel-aa7428291/" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          <!-- Member Start -->
-          <div class="col-lg-3 col-md-6">
+          
+          <!-- Treasurer -->
+          <div class="col-lg-3 col-md-6 margin-below">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/neeraj.jpg" alt="" />
+                <img class="team-photo" src="assets/images/neeraj.jpg" alt="Neeraj Dase - Treasurer" />
                 <span class="category">Treasurer</span>
                 <h4>Neeraj Dase</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="https://github.com/neeraj-dase"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/neeraj-dase" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/neeraj.dase?igsh=emExcHhoZWd2YWMx"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/neeraj.dase?igsh=emExcHhoZWd2YWMx" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/neeraj-dase-866b75291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/neeraj-dase-866b75291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          <!-- Member Start -->
-          <div class="col-lg-3 col-md-6">
+          
+          <!-- Event Management Lead -->
+           <div class="team section" id="team-subheads">
+      <div class="container">
+        <div class="row row2 justify-content-center">
+          <div class="col-lg-3 col-md-6 margin-below">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/Tanmay.jpg" alt="" />
+                <img class="team-photo" src="assets/images/Tanmay.jpg" alt="Tanmay Khalekar - Event Management Lead" />
                 <span class="category">Event Management Lead</span>
                 <h4>Tanmay Khalekar</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="https://github.com/tanmay-khalekar"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/tanmay-khalekar" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/tanmay_khalekar_"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/tanmay_khalekar_" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/tanmay-khalekar-570024291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/tanmay-khalekar-570024291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          <!-- Member Start -->
-          <div class="col-lg-3 col-md-6">
+          
+          <!-- Secretary -->
+          <div class="col-lg-3 col-md-6 margin-below">
             <div class="team-member">
               <div class="main-content">
-                <img class="team-photo" src="assets/images/Vedika1.jpg" alt="" />
+                <img class="team-photo" src="assets/images/Vedika1.jpg" alt="Vedika Dawani - Secretary" />
                 <span class="category">Secretary</span>
                 <h4>Vedika Dawani</h4>
                 <ul class="social-icons">
                   <li>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/vedika1_1?igsh=ZnY3aWZoc29sOXJu"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/vedika1_1?igsh=ZnY3aWZoc29sOXJu" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/vedika-dawani-907953296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vedika-dawani-907953296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- Member End -->
-          
-          
-          
-           
-          
         </div>
       </div>
     </div>
+    </div>
+  </div>
+  </div>
 
+    <!-- Testimonials Section -->
     <div class="section testimonials">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
             <div class="owl-carousel owl-testimonials">
-
-              <!-- item start -->
+              <!-- Testimonial 1 -->
               <div class="item">
                 <p>
-                  “Being a part of the SCADE club has been an incredible journey. Serving as a Technical Team member provided me with hands-on experience in cybersecurity and data science”
+                  "Being a part of the SCADE club has been an incredible journey. Serving as a Technical Team member provided me with hands-on experience in cybersecurity and data science"
                 </p>
                 <div class="author">
-                  <img src="assets/images/testi-1.jpg" alt="" />
+                  <img src="assets/images/testi-1.jpg" alt="Shivanjali Bhilare" />
                   <span class="category">Power BI Developer</span>
                   <h4>Shivanjali Bhilare</h4>
                 </div>
               </div>
-              <!-- item start -->
+              
+              <!-- Testimonial 2 -->
               <div class="item">
                 <p>
-                  “Being a part of scade club has been a transformative experience for me. I had the privilege of serving as Public relations member which gave me opportunities.”
+                  "Being a part of scade club has been a transformative experience for me. I had the privilege of serving as Public relations member which gave me opportunities."
                 </p>
                 <div class="author">
-                  <img src="assets/images/testi-2.jpg" alt="" />
+                  <img src="assets/images/testi-2.jpg" alt="Sakshi Ware" />
                   <span class="category">Data Analyst</span>
                   <h4>Sakshi Ware</h4>
                 </div>
               </div>
-              <!-- item start -->
+              
+              <!-- Testimonial 3 -->
               <div class="item">
                 <p>
-                  “Leading the SCADE club as President has been an incredible journey. From inaugurating the club to fostering creativity and organizing events, I aimed to build a vibrant community.”
+                  "Leading the SCADE club as President has been an incredible journey. From inaugurating the club to fostering creativity and organizing events, I aimed to build a vibrant community."
                 </p>
                 <div class="author">
-                  <img src="assets/images/testi-3.jpg" alt="" />
+                  <img src="assets/images/testi-3.jpg" alt="Abuzaid Shaikh" />
                   <span class="category">Data Analyst</span>
                   <h4>Abuzaid Shaikh</h4>
                 </div>
               </div>
-              
-              
             </div>
           </div>
+          
           <div class="col-lg-5 align-self-center">
             <div class="section-heading">
               <h6>TESTIMONIALS</h6>
               <h2>Student reviews about us</h2>
               <p>
-                Don't just take our word for it – hear what our members have to say! Our students are at the heart of SCADE, and their experiences speak volumes about the impact of our club. Here are a few testimonials from our enthusiastic and engaged members:
+                Don't just take our word for it – hear what our members have to say! Our students are at the heart of SCADE, and their experiences speak volumes about the impact of our club. Here are a few testimonials from our enthusiastic and engaged members:
               </p>
             </div>
           </div>
@@ -647,46 +617,7 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
 
-    <!-- <div class="section events" id="events">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-6">
-            <div class="item">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="image">
-                    <img src="assets/images/event-01.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                  <ul>
-                    <li>
-                      <span class="category">Web Design</span>
-                      <h4>UI Best Practices</h4>
-                    </li>
-                    <li>
-                      <span>Date:</span>
-                      <h6>16 Feb 2036</h6>
-                    </li>
-                    <li>
-                      <span>Duration:</span>
-                      <h6>22 Hours</h6>
-                    </li>
-                    <li>
-                      <span>Price:</span>
-                      <h6>$120</h6>
-                    </li>
-                  </ul>
-                  <a href="#"><i class="fa fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div> -->
-
+    <!-- Contact Us Section -->
     <div class="contact-us section" id="contact">
       <div class="container">
         <div class="row">
@@ -695,28 +626,29 @@ https://templatemo.com/tm-586-scholar
               <h6>Contact Us</h6>
               <h2>Feel free to contact us</h2>
               <p>
-                Thank you for visiting our website! Whether you have questions about our club's activities, want to collaborate, or simply discuss cyber security and data science, we'd love to hear from you. Reach out to us via the form below or connect with us on our social media channels. We look forward to engaging with you!
+                Thank you for visiting our website! Whether you have questions about our club's activities, want to collaborate, or simply discuss cyber security and data science, we'd love to hear from you. Reach out to us via the form below or connect with us on our social media channels. We look forward to engaging with you!
               </p>
               <div class="special-offer">
                 <span class="offer"><br /><em></em></span>
                 <h6>Visit Our <em>Link Tree</em></h6>
-                <h4>SCADE GHRCEM </h4>
-                <a href="https://linktr.ee/scadeghrcem"><i class="fa fa-angle-right"></i></a>
+                <h4>SCADE GHRCEM</h4>
+                <a href="https://linktr.ee/scadeghrcem" aria-label="Visit our LinkTree"><i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
+          
           <div class="col-lg-6">
             <div class="contact-us-content">
-              <form id="contact-form" action="" method="post">
+              <form id="contact-form" action="#" method="post">
                 <div class="row">
                   <div class="col-lg-12">
                     <fieldset>
                       <input
-                        type="name"
+                        type="text"
                         name="name"
                         id="name"
                         placeholder="Your Name..."
-                        autocomplete="on"
+                        autocomplete="name"
                         required
                       />
                     </fieldset>
@@ -724,12 +656,11 @@ https://templatemo.com/tm-586-scholar
                   <div class="col-lg-12">
                     <fieldset>
                       <input
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
-                        pattern="[^ @]*@[^ @]*"
                         placeholder="Your E-mail..."
-                        required=""
+                        required
                       />
                     </fieldset>
                   </div>
@@ -739,6 +670,7 @@ https://templatemo.com/tm-586-scholar
                         name="message"
                         id="message"
                         placeholder="Your Message"
+                        required
                       ></textarea>
                     </fieldset>
                   </div>
@@ -761,98 +693,16 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
 
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="col-lg-12">
           <p>
-            Copyright © 2036 SCADE GHRCEM. All rights reserved.
-            &nbsp;&nbsp;&nbsp;
+            Copyright &copy; 2025 SCADE GHRCEM. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
-
-
-
-    <script type="module">
-      import { inject } from "@vercel/analytics"
-    </script>
-
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-      import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
-  
-      // Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyCC7PCS8THdg5GKPqKl-w3FiB898NGal3s",
-        authDomain: "scade-website.firebaseapp.com",
-        projectId: "scade-website",
-        storageBucket: "scade-website.appspot.com",
-        messagingSenderId: "528561962338",
-        appId: "1:528561962338:web:317afbc9c42463f458803b",
-        measurementId: "G-4D3K51P8E3"
-      };
-  
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth();
-  
-      const userSession = sessionStorage.getItem("user");
-
-      //login redirecting
-//       if (userSession) {
-//   console.log("User session found:");
-// } else {
-//   console.log("No user session found.");
-//   alert("Log out and Login again");
-//   window.location.href = 'login.html'
-// }
-
-    </script>
-
-
-<!-- Logout functionality -->
-    <script>
-      const logoutButton = document.getElementById("logout");
-
-      logoutButton.addEventListener("click", () => {
-        // Clear user session
-        sessionStorage.removeItem("user");
-        // Redirect to login page
-        window.location.href = "login.html";
-      }); 
-    </script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-      fetch('http://your-backend-url.com/events')
-          .then(response => response.json())
-          .then(events => {
-              const eventContainer = document.getElementById('eventContainer');
-              events.forEach(event => {
-                  const eventItem = document.createElement('div');
-                  eventItem.className = `col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 ${event.type}`;
-                  eventItem.innerHTML = `
-                      <div class="events_item">
-                          <div class="thumb">
-                              <a href="#"><img src="${event.image}" alt="">
-                              <span class="category">${event.category}</span>
-                              <span class="price"><h6>View</h6></span>
-                          </div>
-                          <div class="down-content">
-                              <span class="author">${event.type === 'past' ? 'Past Event' : 'Future Event'}</span>
-                              <h4>${event.title}</h4>
-                          </div>
-                      </a>
-                      </div>
-                  `;
-                  eventContainer.appendChild(eventItem);
-              });
-          })
-          .catch(error => console.error('Error fetching events:', error));
-  });
-  </script>
-
   
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
@@ -862,8 +712,39 @@ https://templatemo.com/tm-586-scholar
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- <script type="module" src="assets/js/index.js"></script> -->
-    <script src="assets/js/test.js" defer></script>
 
+    <!-- Custom Script for Events Filter -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const eventFilters = document.querySelectorAll('.event_filter a');
+        const noFutureEventsMessage = document.getElementById('no-future-events');
+        
+        // Check on initial load
+        checkFutureEvents();
+
+        // Add click listeners to filters
+        eventFilters.forEach(filter => {
+          filter.addEventListener('click', function() {
+            // Update active class
+            eventFilters.forEach(f => f.classList.remove('is_active'));
+            this.classList.add('is_active');
+            
+            // Check after filtering
+            setTimeout(checkFutureEvents, 300);
+          });
+        });
+        
+        function checkFutureEvents() {
+          const activeFilter = document.querySelector('.event_filter a.is_active').getAttribute('data-filter');
+          const futureEvents = document.querySelectorAll('.event_outer.future');
+          
+          if (activeFilter === '.future' && futureEvents.length === 0) {
+            noFutureEventsMessage.style.display = 'block';
+          } else {
+            noFutureEventsMessage.style.display = 'none';
+          }
+        }
+      });
+    </script>
   </body>
-</html>
+</html> make this two images aling prperly and make it fit correct
